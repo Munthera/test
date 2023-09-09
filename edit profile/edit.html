@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./edit.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>Edit Profile</h2>
+        <img src="../img/777.PNG" alt="User Photo" class="profile-image">
+        <button class="edit-photo-button">
+            <i class="fas fa-edit edit-icon"></i>
+        </button>
+        <form action="update-profile.php" method="POST">
+            <input type="text" name="name" class="form-input" placeholder="Name" required>
+            <div class="filling-bar"></div>
+            <input type="email" name="email" class="form-input" placeholder="Email" required>
+            <div class="filling-bar"></div>
+            <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required>
+            <div class="filling-bar"></div>
+            <button type="submit" class="form-button">Save Changes</button>
+        </form>
+    </div>
+
+</body>
+</html>
